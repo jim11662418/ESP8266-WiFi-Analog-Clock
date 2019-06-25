@@ -84,8 +84,8 @@ tmr.alarm(startTimer,100,tmr.ALARM_SINGLE, --allow 100 milliseconds for the curs
                   checkCount=0 
                   wifi.setmode(wifi.STATION,true)
                   station_cfg={}
-                  station_cfg.ssid="traXu74P"
-                  station_cfg.pwd="Zjx9rUVYyT"
+                  station_cfg.ssid="********"
+                  station_cfg.pwd="********"
                   station_cfg.save=true
                   wifi.sta.config(station_cfg)                  
                   ssid=wifi.sta.getconfig()
