@@ -1,3 +1,7 @@
+-- init.lua is always run first after a reset.
+-- runs "analogClockAP.lua" if unable to connect to WiFi.
+-- runs "AnalogClockSetup.lua" if this is the first run.
+
 NTPSERVER="0.us.pool.ntp.org"
 
    GPIO0  = 3
