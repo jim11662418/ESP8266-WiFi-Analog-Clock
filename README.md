@@ -1,6 +1,6 @@
 # ESP8266 WiFi Analog Clock
 ## Introduction
-This project uses an ESP8266 module and a Lua script to connect to a NTP (Network Time Protocol) server to automatically retrieve and display the local time on a inexpensive analog quartz clock. The ESP8266 reconnects to the NTP server every 15 minutes which keeps the clock accurate. The clock also automatically adjusts for daylight savings time.
+This project uses an ESP8266 module and a [NodeMCU Lua](https://nodemcu.readthedocs.io/en/master/) script to connect to a NTP (Network Time Protocol) server to automatically retrieve and display the local time on a inexpensive analog quartz clock. The ESP8266 reconnects to the NTP server every 15 minutes which keeps the clock accurate. The clock also automatically adjusts for daylight savings time.
 <p align="center"><img src="/images/Analog%20Clock.jpeg"/>
 <p align="center">Analog Clock</p>
 
