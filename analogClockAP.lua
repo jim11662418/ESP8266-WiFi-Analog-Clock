@@ -1,4 +1,4 @@
--- set up an access point if unable to connect to the AP
+-- set up an access point to allow user to select SSID and enter password if unable to connect
 
 currentAPs = {}   -- global table of Access Point SSIDs
 
