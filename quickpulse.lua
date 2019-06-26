@@ -1,3 +1,6 @@
+-- "Pulse" the analog clock's lavet motor coil ten times per second.
+-- It may be necessary to adjust the PULSETIME constant to get it to work reliably.
+
 -- GPIO0  = 3	
 -- GPIO1  = 10 (TX)
 -- GPIO2  = 4	
@@ -16,7 +19,7 @@ GPIO2 = 4           -- use GPIO2 output for one side of the coil
 GPIO3 = 9           -- use GPIO3 output for the other side of the coil
 GPIO0 = 3           -- use GPIO0 output for heartbeat LED
 ONESECOND = 1000    -- 1000 milliseconds/second
-PULSETIME = 30      -- 40 millisecond length of clock pulse
+PULSETIME = 30      -- 30 millisecond length of clock pulse
 ON = 0
 OFF = 1
 POS = 0
