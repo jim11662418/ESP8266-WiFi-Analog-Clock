@@ -1,3 +1,4 @@
+-- Zeros out the Microchip 47C04 EERAM
 
 -- write SRAM
 function writeSRAM(address,data)
