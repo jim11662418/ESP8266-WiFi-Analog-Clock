@@ -1,6 +1,6 @@
 -- thi script sets up a web page to allow the user to specify the starting position of the
 -- analog clock's hands. this is necessary since there is no feedback of the hand's position.
--- this web page also allows the user ti specify the time zone (necessary for convertinr the UTC
+-- this web page also allows the user to specify the time zone (necessary for converting the UTC
 -- time to local time).
 
 ON=0    -- zero turns the LED on
