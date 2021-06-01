@@ -15,3 +15,5 @@ Once the modifications to your analog clock's mechanism are done, you should run
 The biggest problem with using these cheap analog clocks for a project like this is that the clocks don't provide any type of feedback to indicate the position of the clock's hands.  To get around this problem, the positions of the hour, minute and second hands are stored in a [Microchip 47L04 EERAM](https://www.microchip.com/wwwproducts/en/47L04) (4Kbit SRAM with EEPROM backup) and updated each second as the clock's hands positions change. The first time that the script is run, the user will be directed to a simple web page served by the ESP8266 which is used to tell it where the analog clock's hands are initially positioned. From that point on, the ESP8266 will use the data stored in the EERAM to "remember" the positions of the clock's hands.
 <p align="center"><img src="/images/analogClockSetup.jpg"/>
 <p align="center">Analog Clock Setup</p>
+<p align="center"><img src="/images/analogClockStatus.jpg"/>
+<p align="center">Analog Clock Status</p>
