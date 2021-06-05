@@ -34,8 +34,8 @@
 #define DEBOUNCE 50              // 50 milliseconds to debounce the puchbutton switch
 #define PULSETIME 30             // 30 millisecond pulse for the lavet motor
 
-#define WIFISSID "traXu74P"
-#define PASSWORD "Zjx9rUVYyT"    
+#define WIFISSID "********"
+#define PASSWORD "********"    
 
 #define HOUR     0x0000                         // address in EERAM for analogClkHour
 #define MINUTE   HOUR+1                         // address in EERAM for analogClkMinute
