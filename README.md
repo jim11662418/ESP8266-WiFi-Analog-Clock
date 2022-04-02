@@ -22,3 +22,4 @@ The biggest problem with using these cheap analog clocks for a project like this
 <p align="center">Analog Clock Setup</p>
 <p align="center"><img src="/images/AnalogClockStatus.jpg"/>
 <p align="center">Analog Clock Status</p>
+<p align="center"><img src="/images/AnalogClock.mp4"/>
