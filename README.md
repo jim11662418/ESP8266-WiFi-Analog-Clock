@@ -10,7 +10,7 @@ This project uses an WEMOS D1 Mini ESP8266 module and an Arduino sketch to conne
 <p align="center"><img src="/images/AnalogClock.gif"/>
 
 ## Hardware
-I found an analog clock with a quartz movement found at my local Walmart for $3.88. Whatever analog clock you decide to use, its quartz movement will need to be modified so that it can be controlled by the ESP8266 module. Open up the movement (most of them snap together without any fasteners), disconnect the internal coil of the Lavet stepping motor from its quartz oscillator and then solder a wire to each of the coil's leads to make connections for the ESP8266. If you search around on the web you'll find articles showing how others have done it. Be careful when working with the coil. The coil's wires are typically thinner than a human hair and extremely fragile.
+I found an analog clock with a quartz movement at my local Walmart for $3.88. Whatever analog clock you decide to use, its quartz movement will need to be modified so that it can be controlled by the ESP8266 module. Open up the movement (most of them snap together without any fasteners), disconnect the internal coil of the Lavet stepping motor from its quartz oscillator and then solder a wire to each of the coil's leads to make connections for the ESP8266. If you search around on the web you'll find articles showing how others have done it. Be careful when working with the coil. The coil's wires are typically thinner than a human hair and extremely fragile.
 <p align="center"><img src="/images/Clock%20Movement.jpeg"/>
 <p align="center">Modified Clock Movement</p>
 
