@@ -15,7 +15,7 @@ I found an analog clock with a quartz movement at my local Walmart for $3.88. Wh
 <p align="center">Modified Clock Movement</p>
 
 ## Software
-The sketch: AnalogClock.ino should be (I hope) clear enough, but here, in brief, is a summary of how it operates. Ten times each second the ESP8266 compares the time displayed on the analog clock to the actual time. If the analog clock lags behind the actual time, the ESP8266 advances the clock's second hand until the clock agrees with the actual time. If the time displayed on the analog clock time leads the actual time, the ESP8266 simply waits until the actual time catches up with the analog clock. 
+The sketch: AnalogClock.ino should be (I hope) clear enough, but here, in brief, is a summary of how it operates. Ten times each second the ESP8266 compares the time displayed on the analog clock to the actual time. If the analog clock lags behind the actual time, the ESP8266 advances the clock's second hand until the clock agrees with the actual time. If the time displayed on the analog clock time is ahead of the actual time, the ESP8266 simply waits until the actual time catches up with the analog clock since it can't move the clock's hands backwards. 
 
 The ESP8266 advances the analog clock's second hand by a circuit by generating bipolar pulses, alternately positive and negative to the clock's Lavet motor coil. Because of differences in clock mechanisms, you may need to increase or decrease the "PULSETIME" constant by few milliseconds to make your mechanism step reliably. Experimentally, I found that 30 milliseconds works best for my movement.
 
