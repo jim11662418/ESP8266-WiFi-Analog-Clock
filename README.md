@@ -26,9 +26,14 @@ The very first time that the sketch is run, the user will be directed to a simpl
 <p align="center">Analog Clock Setup Page</p>
 
 <p align="center"><img src="/images/screen2.jpg"/>
-<p align="center">Arduino Serial Monitor during startup</p>
+<p align="center">Arduino Serial Monitor During Startup</p>
 
 Once the ESP8266 finishes its initialazation and starts operation, it serves a simple web page showing the clock's status.
-<p align="center"><img src="/images/AnalogClockStatus.jpg"/>
-<p align="center">Analog Clock Status Page</p>
+<p align="center"><img src="/images/screen3.jpg"/>
+<p align="center">Analog Clock Status Page Using Scalable Vector Graphics to Draw the Clock Face</p>
 
+<p align="center"><img src="/images/screen4.jpg"/>
+<p align="center">Analog Clock Status Page Using HTML the HTML <canvas> Element to Draw the Clock Face</p>
+
+<p align="center"><img src="/images/screen5.jpg"/>
+<p align="center">Analog Clock Status Page Displaying Text Only</p>
