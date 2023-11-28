@@ -46,7 +46,7 @@ Once the ESP8266 finishes its initialazation and starts operation, it serves a s
 <br />
 <br />
 <p align="center"><img src="/images/screen4.jpg"/>
-<p align="center">Analog Clock Status Page Using HTML the HTML <canvas> Element to Draw the Clock Face</p>
+<p align="center">Analog Clock Status Page Using the HTML \<canvas\> Element to Draw the Clock Face</p>
 <br />
 <br />
 <p align="center"><img src="/images/screen5.jpg"/>
