@@ -22,7 +22,7 @@ The ESP8266 advances the analog clock's second hand by generating bipolar pulses
 The biggest problem with using these cheap analog clocks for a project like this is that the clocks don't provide any type of feedback to indicate the position of the clock's hands. Thus if power is interrupted to the ESP8266 controlling the clock, the ESP8266 "forgets" where the clock's hands are positioned.  To get around this problem, the positions of the hour, minute and second hands are stored in a [Microchip 47L04 Serial EERAM](https://www.microchip.com/wwwproducts/en/47L04) (4Kbit SRAM with EEPROM backup) and updated each second as the clock's hands positions change. If power is interrupted, the ESP8266 can retrieve the last position of the clock's hands from the EERAM when power is reapplied. 
 
 The very first time that the sketch is run, the user will be directed to a simple web page (see below) served by the ESP8266 which is used to tell it where the analog clock's hands are initially positioned. From that point on, the ESP8266 will use the data stored in the EERAM to "remember" the positions of the clock's hands.
-<p align="center"><img src="/images/AnalogClockSetup.jpg"/>
+<p align="center"><img src="/images/screen1.jpg"/>
 <p align="center">Analog Clock Setup Page</p>
 
 Once the ESP8266 finishes its initialazation and starts operation, it serves a simple web page showing the clock's status.
