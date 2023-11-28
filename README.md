@@ -11,8 +11,6 @@ This project uses an WEMOS D1 Mini ESP8266 module and an Arduino sketch to conne
 <br />
 <p align="center"><img src="/images/Schematic.jpg"/>
 <p align="center">Schematic</p>
-<br />
-<br />
 <p align="center"><img src="/images/AnalogClock.gif"/>
 
 ## Hardware
