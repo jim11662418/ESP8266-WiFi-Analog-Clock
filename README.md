@@ -6,7 +6,7 @@ This project uses an WEMOS D1 Mini ESP8266 module and an Arduino sketch to conne
 <br />
 <br />  
 <p align="center"><img src="/images/Clock-back.JPEG"/>
-<p align="center">WEMOS D1 Mini ESP8266 Module</p>
+<p align="center">WEMOS D1 Mini ESP8266 Module with EERAM IC and Components on a Piece of Perfboard</p>
 <br />
 <br />
 <p align="center"><img src="/images/Schematic.jpg"/>
