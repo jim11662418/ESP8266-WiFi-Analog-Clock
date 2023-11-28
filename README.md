@@ -3,10 +3,16 @@
 This project uses an WEMOS D1 Mini ESP8266 module and an Arduino sketch to connect to a NTP (Network Time Protocol) server to automatically retrieve and display the local time on a inexpensive analog quartz clock. The ESP8266 reconnects to the NTP server every 15 minutes which keeps the clock accurate. The clock also automatically adjusts for daylight savings time.
 
 <p align="center"><img src="/images/Clock-face.JPEG"/>
+<br />
+<br />  
 <p align="center"><img src="/images/Clock-back.JPEG"/>
 <p align="center">WEMOS D1 Mini ESP8266 Module</p>
+<br />
+<br />
 <p align="center"><img src="/images/Schematic.jpg"/>
 <p align="center">Schematic</p>
+<br />
+<br />
 <p align="center"><img src="/images/AnalogClock.gif"/>
 
 ## Hardware
