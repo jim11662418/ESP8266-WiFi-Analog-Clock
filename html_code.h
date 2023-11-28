@@ -332,6 +332,8 @@ char setuppage[] PROGMEM =
       "&nbsp;<input type='radio' name='timezone' value='6'>&nbsp;Central<br>"
       "&nbsp;<input type='radio' name='timezone' value='7'>&nbsp;Mountain<br>"
       "&nbsp;<input type='radio' name='timezone' value='8'>&nbsp;Pacific<br><br>"
+      "<input type='text' name='check1' value='170' hidden> <!-- check1=0xAA -->"
+      "<input type='text' name='check2' value='85' hidden>  <!-- check2=0x55 -->"            
       "<input type='submit' value='Submit'>"
     "</form>"
     "<script>"

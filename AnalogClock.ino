@@ -174,18 +174,16 @@ void setup() {
     });
 
     server.on("/post",HTTP_POST,[](AsyncWebServerRequest * request) {
-      request->send_P(200,"text/plain","OK");
-         
-      AsyncWebParameter* p0 = request->getParam(0);
-      eeRAM.write(HOUR,atoi(p0->value().c_str()));     // analog clock hour from web page
-      AsyncWebParameter* p1 = request->getParam(1);
-      eeRAM.write(MINUTE,atoi(p1->value().c_str()));   // analog clock minute from web page
-      AsyncWebParameter* p2 = request->getParam(2);
-      eeRAM.write(SECOND,atoi(p2->value().c_str()));   // analog clock second from web page
-      AsyncWebParameter* p3 = request->getParam(3);
-      eeRAM.write(TIMEZONE,atoi(p3->value().c_str())); // analog clock timezone from web page
-      eeRAM.write(CHECK1,0xAA);
-      eeRAM.write(CHECK2,0x55);
+      request->send_P(200,"text/plain","OK, Bye");
+
+      // save the values from the setup page in EERAM
+      byte params = request->params();
+        for(int i=0;i<params;i++){
+        AsyncWebParameter* p = request->getParam(i);
+        eeRAM.write(i,atoi(p->value().c_str()));
+        Serial.printf("%s: %s\n",p->name().c_str(),p->value().c_str());
+      }
+
       ESP.restart();                 
     });
 
@@ -336,13 +334,14 @@ void checkClock() {
     eeRAM.write(SECOND,analogClkSecond); 
     printTime = true;                           // set flag to update display
   } // if (analogClkTime<now())   
-  
-  // this part was added so that the times are printed when the analog clock's hands are stopped waiting for the ESP8266's internal time to catch up
-  byte secs = second();  
-  if (lastSeconds != secs) {                    // when the ESP8266's internal time changes...
-    lastSeconds = secs;                         // save for next time 
-    printTime = true;                           // set flag to print new time 
-  }  
+  else {
+    // this part was added so that the times are printed when the analog clock's hands are stopped waiting for the ESP8266's internal time to catch up
+    byte secs = second();  
+    if (lastSeconds != secs) {                  // when the ESP8266's internal time changes...
+      lastSeconds = secs;                       // save for next time 
+      printTime = true;                         // set flag to print new time 
+    }  
+  }
 }
 
 //--------------------------------------------------------------------------
