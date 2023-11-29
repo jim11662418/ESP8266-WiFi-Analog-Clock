@@ -334,15 +334,14 @@ void checkClock() {
     eeRAM.write(SECOND,analogClkSecond); 
     printTime = true;                           // set flag to update display
   } // if (analogClkTime<now())   
-  else {
-    // this part was added so that the times are printed when the analog clock's hands are stopped waiting for the ESP8266's internal time to catch up
-    byte secs = second();  
-    if (lastSeconds != secs) {                  // when the ESP8266's internal time changes...
-      lastSeconds = secs;                       // save for next time 
-      printTime = true;                         // set flag to print new time 
-    }  
-  }
-}
+ 
+  // this part was added so that the times are printed when the analog clock's hands are stopped waiting for the ESP8266's internal time to catch up
+  byte secs = second();  
+  if (lastSeconds != secs) {                  // when the ESP8266's internal time changes...
+    lastSeconds = secs;                       // save for next time 
+    printTime = true;                         // set flag to print new time 
+  }  
+ }
 
 //--------------------------------------------------------------------------
 // NTP event handler
