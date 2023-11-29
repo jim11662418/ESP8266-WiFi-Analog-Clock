@@ -6,8 +6,8 @@
 // clock to keep the clock in sync with local time. The ESP8266 stores the position 
 // of the clock's hour, minute and second hands in I2C Serial EERAM.
 //
-// This version uses the ESPAsyncWebServer library (which is incompatible with the 
-// ESPTelnet library).
+// This version uses the ESPAsyncWebServer library which seems to be faster than the
+// ESP8266WebServer library but which is incompatible with the ESPTelnet library.
 //--------------------------------------------------------------------------
 
 #define VERSION "2.5"
